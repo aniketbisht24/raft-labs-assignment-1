@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+
+    <script src="js/main.js" defer></script>
+    <title>Assignment 1</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h2>Assignment 1</h2>
+        </div>
+        <div class="nav-links">
+          <ul>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <body>
+      <section class="showcase">
+        <form id="image-form">
+          <h1>Describe An Image</h1>
+          <div class="form-control">
+            <input type="text" id="prompt" placeholder="Enter ISBN "/>
+            <input type="text" id="author" placeholder="Enter Author "/>
+          </div>
+
+          <button type="submit" class="btn">Generate</button>
+
+          
+          <button onclick="downloadData()">Download Data</button>
+        </form>
+
+      </section>
+
+      <table class="table">
+        <thead class="table-head"> 
+          <th> isbn </th>
+          <th> title </th>
+          <th> author </th>
+          <th> publishedAt </th>
+        </thead>
+        <tbody class = "table-body"> </tbody>
+      </table>
+    </body>
+
+    <section class="image">
+        <h2 class="msg"></h2>
+    </section>
+
+    <div class="spinner"></div>
+  </body>
+</html>
