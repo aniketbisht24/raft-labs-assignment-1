@@ -17,10 +17,11 @@ try{
     app.use(express.static(path.join(__dirname, 'views')))
     
     app.listen(port)
-    
+
     app.use('/', routes)
 }
 catch(err){
     app.close()
 }
 
+module.exports = app
