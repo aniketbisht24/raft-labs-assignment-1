@@ -34,3 +34,59 @@ should be done for books and magazines together.
 new CSV file.
 7. Unit tests for the methods
 
+
+# DOCS TO USE API
+
+### REGISTER
+
+
+    router.get('/books-magazines', getAll)
+    router.get('/books-magazines/:isbn/find', getByIsbn)
+    router.get('/books-magazines/find', get)
+    router.post('/books-magazines', save)
+    router.get('/books-magazines/get-csv', getCsv)
+    
+    
+### getAll Books and Magazines
+GET URL - `/books-magazines`
+
+---
+
+### get Books and Magazines by ISBN
+
+GET URL - `/books-magazines/:isbn/find`
+
+### GET Books and Magazines by author
+
+GET URL - `/books-magazines/find`
+
+BODY
+
+```json
+{
+  "authors": "author@gmail.com",
+}
+```
+
+
+### GET csv of books and magazines
+
+GET URL - `/books-magazines/get-csv`
+
+### Save books or magazines
+
+POST URL - `/books-magazines`
+
+BODY
+
+```json
+{
+  "authors": "author@gmail.com",
+  "title": "Cooking for gourmets",
+  "isbn": "2365-5632-7854",
+  "authors": "walter@echocat.org",
+  "publishedAt": "21.05.2011",
+  "description": "this is description"
+  "Beautiful cooking",
+}
+```
