@@ -53,7 +53,7 @@ const getAll = (req, res) => {
             return 0;
         })
 
-        return res.status(201).json({ result });
+        return res.status(201).json({ doc: result });
     }
     catch (err) {
         res.status(500).json({ errors: 'Internal Server Error' })
