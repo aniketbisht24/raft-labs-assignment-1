@@ -21,7 +21,7 @@ const getData = async (prompt, author) => {
             throw new Error('Data could not be loaded');
         }
 
-        let { result: data } = await response.json();
+        let { doc: data } = await response.json();
 
         if(prompt || author){
             data = data.filter((result) => {
