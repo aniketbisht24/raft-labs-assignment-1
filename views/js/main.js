@@ -77,7 +77,7 @@ const onSubmit = (e) => {
 
 getData()
 
-document.querySelector('#image-form').addEventListener('submit', onSubmit);
+document.querySelector('#form').addEventListener('submit', onSubmit);
 
 const downloadData = async() => {
     
